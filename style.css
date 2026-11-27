@@ -514,3 +514,14 @@ textarea:focus {
   .hero { padding-top: 48px; }
   section { padding: 44px 0; }
 }
+
+.table-wrap { overflow-x: auto; }
+.legal table { width: 100%; border-collapse: collapse; font-size: 0.95rem; }
+.legal th, .legal td { border: 1px solid var(--border); padding: 10px 12px; text-align: start; vertical-align: top; }
+.legal th { background: var(--accent-soft); }
+[dir="rtl"] .legal ul { padding-left: 0; padding-right: 22px; }
+
+/* keyword link list on the homepage */
+.feature-links { list-style: none; padding: 0; margin: 1rem 0 0; display: grid; gap: .5rem; }
+.feature-links li { padding: .6rem .8rem; border: 1px solid rgba(127,127,127,.25); border-radius: 10px; }
+.feature-links a { font-weight: 600; }
