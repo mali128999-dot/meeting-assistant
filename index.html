@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Meeting Assistant: instant AI answers in your meetings</title>
+  <meta name="description" content="Meeting Assistant listens to your Teams or Zoom meeting and shows instant AI answers in an always-on-top window. Free on Windows.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="container nav" aria-label="Main">
+      <a href="#top" class="brand">Meeting Assistant</a>
+      <div class="nav-links">
+        <a href="#features">Features</a>
+        <a href="#how">How it works</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="top">
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container">
+        <h1>Meeting Assistant</h1>
+        <p class="lead">Instant AI answers during your Teams and Zoom meetings, in a small window that stays on top.</p>
+
+        <div id="download-area" class="hero-actions">
+          <a id="download-btn" class="btn btn-primary" href="https://github.com/mali128999-dot/meeting-assistant/releases/latest/download/MeetingAssistant-Setup.exe">Download free for Windows</a>
+        </div>
+
+        <!-- Shown by app.js on Mac, iPhone and iPad instead of the download button. -->
+        <div id="mac-box" class="notice" hidden>
+          <p>Meeting Assistant is free on Windows. A Mac version is available on a paid plan. Fill in this form and we'll get back to you.</p>
+
+          <form class="form form-card" data-form-type="mac" novalidate>
+            <div class="form-grid">
+              <div class="field">
+                <label for="mac-name">Name</label>
+                <input type="text" id="mac-name" name="name" autocomplete="name" required>
+              </div>
+              <div class="field">
+                <label for="mac-email">Email</label>
+                <input type="email" id="mac-email" name="email" autocomplete="email" required>
+              </div>
+              <div class="field">
+                <label for="mac-country">Country</label>
+                <input type="text" id="mac-country" name="country" autocomplete="country" required>
+              </div>
+              <div class="field">
+                <label for="mac-company">Company <span class="optional">(optional)</span></label>
+                <input type="text" id="mac-company" name="company" autocomplete="organization">
+              </div>
+              <div class="field">
+                <label for="mac-phone">Phone <span class="optional">(optional)</span></label>
+                <input type="tel" id="mac-phone" name="phone" autocomplete="tel">
+              </div>
+              <div class="field full">
+                <label for="mac-message">Message</label>
+                <textarea id="mac-message" name="message" placeholder="Tell us about your meetings and PC setup"></textarea>
+              </div>
+              <div class="field full">
+                <label class="consent">
+                  <input type="checkbox" name="consent" required>
+                  <span>I agree that my details are used to contact me, as described in the <a href="privacy.html">privacy policy</a>.</span>
+                </label>
+              </div>
+            </div>
+            <div class="form-actions">
+              <button type="submit" class="btn btn-primary">Send</button>
+            </div>
+            <p class="form-status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+
+        <p class="subtitle">2 free meetings. No setup, no API keys.</p>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section id="features">
+      <div class="container">
+        <h2>Answers while the meeting is happening</h2>
+        <p class="section-intro">Ask a question or let the app answer for you. Nothing to configure during the call.</p>
+        <div class="cards">
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">1</div>
+            <h3>Local transcription</h3>
+            <p>Speech is turned into text on your PC with Whisper. You don't need to upload recordings or set up a transcription service.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">2</div>
+            <h3>Instant answers</h3>
+            <p>When someone asks a question, the answer appears in the window within seconds and streams in as it is written.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">3</div>
+            <h3>Private by design</h3>
+            <p>Audio never leaves your PC. Only the text of the recent conversation is sent to the AI to write an answer.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- How it works -->
+    <section id="how">
+      <div class="container">
+        <h2>How it works</h2>
+        <ol class="steps">
+          <li><strong>Download and run</strong>Get the Windows app and start it. The window floats above your meeting.</li>
+          <li><strong>Join your meeting</strong>The app listens to the other people and to you, and transcribes locally.</li>
+          <li><strong>Get answers</strong>It answers automatically when someone asks a question. Press F8 to ask now, or F9 to pause.</li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Pricing -->
+    <section id="pricing">
+      <div class="container">
+        <h2>Pricing</h2>
+        <p class="section-intro">Start free with 2 meetings. Upgrade to a monthly plan when you need more.</p>
+
+        <div class="pricing-grid">
+          <div class="price-card">
+            <p class="plan-name">Monthly plan</p>
+            <p class="price"><span id="price-amount">$15</span><span class="per"> / month</span></p>
+            <p class="price-note" id="price-note">Estimated from your location.</p>
+            <ul class="check-list">
+              <li>2,000 answers per month</li>
+              <li>Up to 2 PCs</li>
+              <li>Local transcription on Windows</li>
+            </ul>
+            <a href="#upgrade" class="btn btn-primary">Upgrade</a>
+            <p class="region-note">Need more? <a href="#contact">Contact us for an extended plan.</a></p>
+          </div>
+
+          <div>
+            <div class="region-note" style="margin-top:0">
+              <strong>Prices vary by region</strong>
+              <ul>
+                <li><strong>$5 / month:</strong> India, Pakistan, Bangladesh, Philippines, Indonesia, Vietnam, Thailand, Malaysia, Africa and more</li>
+                <li><strong>$10 / month:</strong> Latin America, Eastern Europe and Turkey</li>
+                <li><strong>$15 / month:</strong> US, UK, EU, Gulf, Australia, Canada and other regions</li>
+              </ul>
+            </div>
+            <p class="payment-note">Payment is currently by bank transfer or card payment link. Submit the form and we'll email you payment details and your license key.</p>
+          </div>
+        </div>
+
+        <!-- Upgrade form -->
+        <div id="upgrade" class="form-card">
+          <h3>Upgrade to a monthly plan</h3>
+          <form class="form" data-form-type="upgrade" novalidate>
+            <div class="form-grid">
+              <div class="field">
+                <label for="up-name">Name</label>
+                <input type="text" id="up-name" name="name" autocomplete="name" required>
+              </div>
+              <div class="field">
+                <label for="up-email">Email</label>
+                <input type="email" id="up-email" name="email" autocomplete="email" required>
+              </div>
+              <div class="field">
+                <label for="up-country">Country</label>
+                <input type="text" id="up-country" name="country" autocomplete="country" required>
+              </div>
+              <div class="field">
+                <label for="up-company">Company <span class="optional">(optional)</span></label>
+                <input type="text" id="up-company" name="company" autocomplete="organization">
+              </div>
+              <div class="field full">
+                <label for="up-phone">Phone <span class="optional">(optional)</span></label>
+                <input type="tel" id="up-phone" name="phone" autocomplete="tel">
+              </div>
+              <div class="field full">
+                <label class="consent">
+                  <input type="checkbox" name="consent" required>
+                  <span>I agree that my details are used to contact me, as described in the <a href="privacy.html">privacy policy</a>.</span>
+                </label>
+              </div>
+            </div>
+            <div class="form-actions">
+              <button type="submit" class="btn btn-primary">Request upgrade</button>
+            </div>
+            <p class="form-status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <div class="container">
+        <h2>Contact us</h2>
+        <p class="section-intro">Questions, extended plans or anything else. We'll reply by email.</p>
+
+        <div class="form-card">
+          <form class="form" data-form-type="contact" novalidate>
+            <div class="form-grid">
+              <div class="field">
+                <label for="ct-name">Name</label>
+                <input type="text" id="ct-name" name="name" autocomplete="name" required>
+              </div>
+              <div class="field">
+                <label for="ct-email">Email</label>
+                <input type="email" id="ct-email" name="email" autocomplete="email" required>
+              </div>
+              <div class="field full">
+                <label for="ct-message">Message</label>
+                <textarea id="ct-message" name="message" required></textarea>
+              </div>
+              <div class="field full">
+                <label class="consent">
+                  <input type="checkbox" name="consent" required>
+                  <span>I agree that my details are used to contact me, as described in the <a href="privacy.html">privacy policy</a>.</span>
+                </label>
+              </div>
+            </div>
+            <div class="form-actions">
+              <button type="submit" class="btn btn-primary">Send message</button>
+            </div>
+            <p class="form-status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq">
+      <div class="container">
+        <h2>FAQ</h2>
+        <div class="faq">
+          <details>
+            <summary>Do I need to tell the people in my meeting?</summary>
+            <p>Yes. You must tell meeting participants you are using a transcription assistant, where the law requires it. You are responsible for getting consent.</p>
+          </details>
+          <details>
+            <summary>What data is sent to the AI?</summary>
+            <p>Audio stays on your PC. The text of the recent conversation, and any question you type, is sent to an AI provider to write the answer. We store only your device ID, usage counts, license information and form submissions. We do not store meeting content. See the <a href="privacy.html">privacy policy</a>.</p>
+          </details>
+          <details>
+            <summary>Can I get a refund?</summary>
+            <p>Yes. You can request a full refund within 14 days of purchase. See the <a href="terms.html">terms</a>.</p>
+          </details>
+          <details>
+            <summary>Windows shows a SmartScreen warning. Is the app safe?</summary>
+            <p>New apps can trigger the Windows SmartScreen warning. Click "More info", then "Run anyway". The app is installed from the official GitHub releases page.</p>
+          </details>
+          <details>
+            <summary>Does it work with Zoom?</summary>
+            <p>Yes. It works with Microsoft Teams and Zoom on Windows, and with other meeting apps that play audio through your PC.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>&copy; Meeting Assistant</span>
+      <nav class="footer-links" aria-label="Legal">
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
