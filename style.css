@@ -525,3 +525,5 @@ textarea:focus {
 .feature-links { list-style: none; padding: 0; margin: 1rem 0 0; display: grid; gap: .5rem; }
 .feature-links li { padding: .6rem .8rem; border: 1px solid rgba(127,127,127,.25); border-radius: 10px; }
 .feature-links a { font-weight: 600; }
+
+.demo-video { display: block; width: 100%; max-width: 960px; height: auto; margin: 0 auto 32px; border-radius: 12px; box-shadow: 0 12px 40px rgba(0,0,0,.35); background: #18182c; aspect-ratio: 16 / 9; }
