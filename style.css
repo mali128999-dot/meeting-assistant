@@ -491,6 +491,8 @@ textarea:focus {
 .footer-links { display: flex; gap: 18px; flex-wrap: wrap; }
 
 .footer-links a { color: var(--muted); }
+.footer-badge { display: inline-flex; align-items: center; }
+.footer-badge img { display: block; height: auto; }
 
 .muted { color: var(--muted); }
 .small { font-size: 0.85rem; }
